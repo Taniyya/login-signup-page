@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // DOM Elements
 const signupForm = document.getElementById('signupForm');
 const firstNameInput = document.getElementById('firstName');

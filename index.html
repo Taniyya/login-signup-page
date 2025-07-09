@@ -3,37 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Create Account</title>
+    <title>Login - Welcome Back</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="signup-container">
-            <div class="signup-header">
-                <h1>Create Account</h1>
-                <p>Join us and start your journey today</p>
+        <div class="login-container">
+            <div class="login-header">
+                <h1>Welcome Back</h1>
+                <p>Sign in to your account to continue</p>
             </div>
             
-            <form class="signup-form" id="signupForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <div class="input-wrapper">
-                            <i class="fas fa-user"></i>
-                            <input type="text" id="firstName" name="firstName" placeholder="First name" required>
-                        </div>
-                        <span class="error-message" id="firstNameError"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <div class="input-wrapper">
-                            <i class="fas fa-user"></i>
-                            <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
-                        </div>
-                        <span class="error-message" id="lastNameError"></span>
-                    </div>
-                </div>
-                
+            <form class="login-form" id="loginForm">
                 <div class="form-group">
                     <div class="input-wrapper">
                         <i class="fas fa-envelope"></i>
@@ -50,24 +32,17 @@
                     <span class="error-message" id="passwordError"></span>
                 </div>
                 
-                <div class="form-group">
-                    <div class="input-wrapper">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
-                    </div>
-                    <span class="error-message" id="confirmPasswordError"></span>
-                </div>
-                
                 <div class="form-options">
                     <label class="checkbox-wrapper">
-                        <input type="checkbox" id="terms" required>
+                        <input type="checkbox" id="remember">
                         <span class="checkmark"></span>
-                        I agree to the <a href="#" class="terms-link">Terms of Service</a>&nbsp;and&nbsp;<a href="#" class="terms-link">Privacy Policy</a>
+                        Remember me
                     </label>
+                    <a href="forgot-password.html" class="forgot-link">Forgot password?</a>
                 </div>
                 
-                <button type="submit" class="signup-btn">
-                    <span class="btn-text">Create Account</span>
+                <button type="submit" class="login-btn">
+                    <span class="btn-text">Sign In</span>
                     <div class="spinner" id="spinner"></div>
                 </button>
             </form>
@@ -79,16 +54,16 @@
             <div class="social-login">
                 <button class="social-btn google-btn">
                     <i class="fab fa-google"></i>
-                    Sign up with Google
+                    Continue with Google
                 </button>
                 <button class="social-btn github-btn">
                     <i class="fab fa-github"></i>
-                    Sign up with GitHub
+                    Continue with GitHub
                 </button>
             </div>
             
-            <div class="login-link">
-                <p>Already have an account? <a href="index.html">Log in</a></p>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
             </div>
         </div>
         
@@ -99,6 +74,6 @@
         </div>
     </div>
     
-    <script src="signup.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
