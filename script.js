@@ -227,14 +227,11 @@ function showSuccessMessage(message) {
 
 // Check for remembered user
 document.addEventListener('DOMContentLoaded', function() {
-    const rememberMe = localStorage.getItem('rememberMe');
-    const userEmail = localStorage.getItem('userEmail');
-    
-    if (rememberMe === 'true' && userEmail) {
-        emailInput.value = userEmail;
-        document.getElementById('remember').checked = true;
-        setInputState(emailInput, 'success');
-    }
+    // Always clear remembered email and checkbox on page load
+    localStorage.removeItem('rememberMe');
+    localStorage.removeItem('userEmail');
+    emailInput.value = '';
+    document.getElementById('remember').checked = false;
 });
 
 // Add focus effects

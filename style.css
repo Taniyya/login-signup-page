@@ -93,9 +93,25 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin-bottom: 4px;
+    align-items: start;
 }
 
 .form-group {
+    margin-bottom: 0;
+    min-width: 0;
+}
+
+.login-form .form-group {
+    margin-bottom: 12px;
+}
+.login-form .form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.signup-form .form-group {
+    margin-bottom: 12px;
+}
+.signup-form .form-group:last-of-type {
     margin-bottom: 0;
 }
 
@@ -170,6 +186,8 @@ body {
     margin-top: 5px;
     display: block;
     min-height: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Form options */
